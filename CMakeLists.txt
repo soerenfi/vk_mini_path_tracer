@@ -2,6 +2,11 @@
 # SPDX-License-Identifier: Apache-2.0
 cmake_minimum_required(VERSION 3.5)
 project(vk_mini_path_tracer)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "") # works
+
+# include(cmake/clang-tidy.cmake)
+option(CLANG_TIDY   "Enable clang-tidy checks during compilation" ON)
+
 
 #####################################################################################
 # look for nvpro_core 1) as a sub-folder 2) at some other locations
